@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="favicon.svg" sizes="32x32">
+    <link rel="icon" href="favicon.svg" sizes="192x192">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>TG_DATING screen 5-6</title>
+</head>
+
+<body>
+
+    <!-- Preloader section -->
+    <div id="preloader">
+        <div class="logo-container">
+            <div class="h1">TG Dating</div>
+        </div>
+    </div>
+
+    <!-- app-wrapper -->
+    <div class="app-wrapper">
+
+        <!-- app-header -->
+        <section class="section app-header">
+            <div class="container">
+                <div class="header-relative-wrapper">
+                    <div class="row header-row">
+                        <div class="col-2">
+                            <a href="screen-7.html" class="header-btn btn btn-primary">
+                                <i class="bi bi-person-circle"></i>
+                            </a>
+                        </div>
+                        <div class="col-8">
+                            <div class="header-logo">TG Dating</div>
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="header-btn btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilter" aria-controls="offcanvasFilter">
+                                <i class="bi bi-sliders"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- app-filter -->
+        <div class="offcanvas offcanvas-top text-bg-dark offcanvas-filter" tabindex="-1" id="offcanvasFilter">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form action="#">
+                    <div class="d-flex flex-column gap-2 mb-4">
+                        <div>
+                            <div class="text-muted mb-1">Где ищем?</div>
+                            <select class="form-select">
+                                <option selected>Страна</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div class="text-muted mb-1">Кого ищем?</div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="select-gender select-option">
+                                        <label for="male">
+                                            <i class="bi bi-person-standing"></i>
+                                            <input type="radio" id="male" name="gender" value="male">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="select-gender select-option">
+                                        <label for="female">
+                                            <i class="bi bi-person-standing-dress"></i>
+                                            <input type="radio" id="female" name="gender" value="female">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-muted mb-1">Возраст</div>
+                            <div class="row gy-3">
+                                <div class="col-6">
+                                    <input type="text" class="form-control" id="age-input-min">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" id="age-input-max">
+                                </div>
+                                <div class="col">
+                                    <div id="ageRangeSlider"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Сохранить</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- app-body -->
+        <section class="section app-body">
+            <div class="container">
+                <div class="position-relative">
+                    <div class="card card-profile">
+                        <div class="card-img-wrapper">
+                            <img class="card-img-top" src="img/photo.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="h4 card-title">Name placeholder, 33</div>
+                            <div class="card-country">Country placeholder</div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <button type="button" class="btn btn-primary btn-icon rounded-circle">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary btn-icon rounded-circle">
+                                    <i class="bi bi-heart-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <!-- scripts -->
+    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendors/noUiSlider-15.8.1/nouislider.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
